@@ -1,0 +1,26 @@
+
+        <div class="form signup_form">
+          <form [formGroup]="forms" (ngSubmit) = "onSubmit()">
+            <h2>Signup</h2>
+
+            <div class="input_box">
+              <input type="email" placeholder="Enter your email" required formControlName="email"/>
+             <li><img src="C:\Chat\chatSstem\src\assets"></li>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Create password" required formControlName="password1" />
+              <i class="uil uil-lock password"></i>
+              <i class='bx bx-envelope'></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Confirm password" required formControlName="password"/>
+              <i class='bx bx-lock-alt'></i>
+              <i class='bx bx-hide'></i>
+            </div>
+
+            <button class="button">Signup Now</button>
+
+            <div class="login_signup">Already have an account? <a routerLink="/signup" id="signup">Login</a></div>
+
+          </form>
+        </div>
